@@ -3,11 +3,25 @@ html, * {
     box-sizing: border-box;
   }
 
-body {
-    background-color: yellow;
-
+nav {
+  background-color: gray;
+  line-height: 4rem;
+  padding: 0 1rem;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
 }
 
-h2 {
-    color: red;
-}  
+body {
+    background-color: gainsboro;
+    margin: 0;
+    height: 100vh;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
