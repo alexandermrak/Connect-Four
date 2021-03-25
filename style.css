@@ -20,6 +20,11 @@ body {
     height: 100vh;
 }
 
+button {
+  width: 120px;
+  height: 40px;
+}
+
 main {
   display: grid;
   justify-content: center;
