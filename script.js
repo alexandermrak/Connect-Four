@@ -51,7 +51,7 @@ function dropToken(r, c) {
             }
         }
         } else {
-                return;
+            return;
         }
     }
      else if (currentPlayer === 2) {
