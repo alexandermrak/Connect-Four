@@ -3,7 +3,6 @@ const tableData = document.getElementsByTagName('td');
 const player1 = 'Red';
 const player2 = 'Yellow';
 
-let score;
 let currentPlayer = 1;
 let playerTurn = document.querySelector(".player-turn");
 let takenSlots = [];
@@ -44,21 +43,21 @@ function dropToken(r, c) {
                document.getElementById(tableEl).style.backgroundColor = "red";
                document.getElementById(tableEl).classList.add('red');
                takenSlots.push(fullIdx);
-               if (redHorizWin() || redVertWin() || redDiagWin() || redReverseDiagWin()) {
+            if (redHorizWin() || redVertWin() || redDiagWin() || redReverseDiagWin()) {
                 playerTurn.textContent = `${player1} WINS! Press the restart button for a new game`;
             } else {
                playerTurn.textContent = `${player2}'s turn`
                return currentPlayer = 2;
             }
-            }
-            } else {
-                return;
-            }
         }
+        } else {
+                return;
+        }
+    }
      else if (currentPlayer === 2) {
         if (isTaken == true) {
             return;
-        } else if (isTaken === false) {
+        }   else if (isTaken === false) {
             if (isTaken2 == true || noFLoat > 41) {
                document.getElementById(tableEl).style.backgroundColor = "yellow";
                document.getElementById(tableEl).classList.add('yellow');
